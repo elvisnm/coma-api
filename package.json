@@ -14,7 +14,8 @@
       "node": ">=0.8.0"
     },
     "dependencies": {
-      "actionHero": "6.4.3"
+      "actionHero": "6.4.3",
+      "redis-url": "0.1.0"
     },
     "devDependencies": {},
     "scripts": {
