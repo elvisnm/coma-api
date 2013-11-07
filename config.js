@@ -91,6 +91,13 @@ configData.faye = {
   ping: null,
 };
 
+configData.stats = {
+  witeFrequency: 1000,
+  keys: [    
+    'actionHero:stats',
+    'actionHero:stats:1'
+  ]},
+
 /////////////
 // SERVERS //
 /////////////
@@ -101,7 +108,7 @@ configData.servers = {
   "web" : {
     secure: false,                       // HTTP or HTTPS?
     serverOptions: {},                   // Passed to https.createServer if secure=ture. Should contain SSL certificates
-    port: 8080,                          // Port or Socket
+    port: 80,                          // Port or Socket
     bindIP: "0.0.0.0",                   // Which IP to listen on (use 0.0.0.0 for all)
     httpHeaders : {                      // Any additional headers you want actionHero to respond with
       'Access-Control-Allow-Origin' : '*',
